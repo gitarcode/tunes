@@ -1,6 +1,6 @@
 This code snippet is adapted from the actual build script used in our codebase to automatically regenerate the Prisma client whenever the Prisma schema file has been modified.
 
-For a detailed description, please visit our blog at [gitar.co/blog](https://gitar.co/blog).
+For a detailed description, please visit our blog post, [Scaling Database Access in Rust](https://gitar.co/blog/scaling-database-access-in-rust).
 
 The script first checks if the generated Prisma client file already exists. If it does, it compares the last modified timestamp of the schema file with that of the generated client. If the schema has been modified more recently, or if the generated client doesn't exist yet, the `regenerate` flag is set to `true`.
 
